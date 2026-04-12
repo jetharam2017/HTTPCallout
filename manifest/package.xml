@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- ═══════════════════════════════════════════════════
+         EXISTING PROJECT COMPONENTS
+    ═══════════════════════════════════════════════════ -->
+    <types>
+        <members>HTTPCalloutAsyncService</members>
+        <members>HTTPCalloutAsyncServiceTest</members>
+        <members>HTTPCalloutFrameworkException</members>
+        <members>HTTPCalloutService</members>
+        <members>HTTPCalloutServiceMock</members>
+        <members>HTTPCalloutServiceMultiMock</members>
+        <members>HTTPCalloutServiceTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>HTTPCalloutConfiguration.SFDCStopBlogs</members>
+        <members>HTTPCalloutConfiguration.TestMetadata</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>HTTPCalloutConfiguration__mdt-HTTPCalloutConfiguration Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>HTTPCalloutConfiguration__mdt.Body__c</members>
+        <members>HTTPCalloutConfiguration__mdt.CertificateName__c</members>
+        <members>HTTPCalloutConfiguration__mdt.Endpoint__c</members>
+        <members>HTTPCalloutConfiguration__mdt.HeaderParameters__c</members>
+        <members>HTTPCalloutConfiguration__mdt.IsCompressed__c</members>
+        <members>HTTPCalloutConfiguration__mdt.Method__c</members>
+        <members>HTTPCalloutConfiguration__mdt.Timeout__c</members>
+        <members>HTTPCalloutConfiguration__mdt.URLParameters__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>HTTPCalloutConfiguration__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>HTTPCalloutConfiguration__mdt.TimeoutLimit</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>SFDCStopAPI</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+
+    <!-- ═══════════════════════════════════════════════════
+         SALESFORCE CPQ (namespace: SBQQ)
+         Custom Objects
+    ═══════════════════════════════════════════════════ -->
+    <types>
+        <!-- Core Quote & Lines -->
+        <members>SBQQ__Quote__c</members>
+        <members>SBQQ__QuoteLine__c</members>
+        <members>SBQQ__QuoteLineGroup__c</members>
+        <members>SBQQ__QuoteDocument__c</members>
+        <members>SBQQ__QuoteTemplate__c</members>
+        <members>SBQQ__TemplateSection__c</members>
+        <members>SBQQ__TemplateContent__c</members>
+        <members>SBQQ__LineColumn__c</members>
+        <members>SBQQ__QuoteProcess__c</members>
+        <!-- Products & Bundles -->
+        <members>SBQQ__ProductOption__c</members>
+        <members>SBQQ__ProductRule__c</members>
+        <members>SBQQ__ProductAction__c</members>
+        <members>SBQQ__ProductCondition__c</members>
+        <members>SBQQ__ConfigurationRule__c</members>
+        <members>SBQQ__ConfigurationAttribute__c</members>
+        <members>SBQQ__Feature__c</members>
+        <members>SBQQ__OptionConstraint__c</members>
+        <members>SBQQ__RelatedProduct__c</members>
+        <members>SBQQ__RelatedContent__c</members>
+        <!-- Pricing -->
+        <members>SBQQ__PriceRule__c</members>
+        <members>SBQQ__PriceAction__c</members>
+        <members>SBQQ__PriceCondition__c</members>
+        <members>SBQQ__PriceSchedule__c</members>
+        <members>SBQQ__DiscountSchedule__c</members>
+        <members>SBQQ__DiscountTier__c</members>
+        <members>SBQQ__PartnerDiscount__c</members>
+        <members>SBQQ__DistributorDiscount__c</members>
+        <members>SBQQ__ContractedPrice__c</members>
+        <members>SBQQ__BlockPrice__c</members>
+        <!-- Subscriptions & Renewals -->
+        <members>SBQQ__Subscription__c</members>
+        <members>SBQQ__SubscriptionConsumptionRate__c</members>
+        <members>SBQQ__SubscriptionConsumptionSchedule__c</members>
+        <members>SBQQ__RenewalModel__c</members>
+        <!-- Custom Actions & Search -->
+        <members>SBQQ__CustomAction__c</members>
+        <members>SBQQ__CustomActionCondition__c</members>
+        <members>SBQQ__SearchFilter__c</members>
+        <members>SBQQ__SearchInputField__c</members>
+        <members>SBQQ__FavoriteProduct__c</members>
+        <members>SBQQ__FavoriteGroup__c</members>
+        <!-- Lookup Tables -->
+        <members>SBQQ__LookupData__c</members>
+        <members>SBQQ__LookupQuery__c</members>
+        <!-- Installment / Payment Terms -->
+        <members>SBQQ__InstallmentSchedule__c</members>
+        <members>SBQQ__Installment__c</members>
+        <!-- Cost & Localization -->
+        <members>SBQQ__Cost__c</members>
+        <members>SBQQ__LocaleTranslation__c</members>
+        <!-- Error / Alert -->
+        <members>SBQQ__ErrorCondition__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- CPQ – Custom Fields on Standard Objects -->
+    <types>
+        <!-- Quote -->
+        <members>SBQQ__Quote.SBQQ__Account__c</members>
+        <members>SBQQ__Quote.SBQQ__BillingFrequency__c</members>
+        <members>SBQQ__Quote.SBQQ__ContractingMethod__c</members>
+        <members>SBQQ__Quote.SBQQ__DefaultTemplate__c</members>
+        <members>SBQQ__Quote.SBQQ__DeliveryMethod__c</members>
+        <members>SBQQ__Quote.SBQQ__EndDate__c</members>
+        <members>SBQQ__Quote.SBQQ__LineItemsGrouped__c</members>
+        <members>SBQQ__Quote.SBQQ__ListAmount__c</members>
+        <members>SBQQ__Quote.SBQQ__MasterContract__c</members>
+        <members>SBQQ__Quote.SBQQ__NetAmount__c</members>
+        <members>SBQQ__Quote.SBQQ__Opportunity2__c</members>
+        <members>SBQQ__Quote.SBQQ__PaymentTerms__c</members>
+        <members>SBQQ__Quote.SBQQ__PriceBook__c</members>
+        <members>SBQQ__Quote.SBQQ__PrimaryContact__c</members>
+        <members>SBQQ__Quote.SBQQ__Primary__c</members>
+        <members>SBQQ__Quote.SBQQ__RenewalTerm__c</members>
+        <members>SBQQ__Quote.SBQQ__Source__c</members>
+        <members>SBQQ__Quote.SBQQ__StartDate__c</members>
+        <members>SBQQ__Quote.SBQQ__Status__c</members>
+        <members>SBQQ__Quote.SBQQ__SubscriptionTerm__c</members>
+        <members>SBQQ__Quote.SBQQ__TotalAmount__c</members>
+        <members>SBQQ__Quote.SBQQ__Type__c</members>
+        <members>SBQQ__Quote.SBQQ__WatermarkShown__c</members>
+        <!-- Opportunity -->
+        <members>Opportunity.SBQQ__AmendedContract__c</members>
+        <members>Opportunity.SBQQ__Contracted__c</members>
+        <members>Opportunity.SBQQ__PrimaryQuote__c</members>
+        <members>Opportunity.SBQQ__RenewedContract__c</members>
+        <!-- Account -->
+        <members>Account.SBQQ__AssetQuantitiesCombined__c</members>
+        <members>Account.SBQQ__CoTermedContractsCombined__c</members>
+        <members>Account.SBQQ__CoTerminationEvent__c</members>
+        <members>Account.SBQQ__IgnoreParentContractedPrices__c</members>
+        <members>Account.SBQQ__PreserveBundle__c</members>
+        <members>Account.SBQQ__PriceHoldEnd__c</members>
+        <members>Account.SBQQ__RenewalModel__c</members>
+        <members>Account.SBQQ__RenewalPricingMethod__c</members>
+        <members>Account.SBQQ__TaxExempt__c</members>
+        <!-- Product2 -->
+        <members>Product2.SBQQ__AssetAmendmentBehavior__c</members>
+        <members>Product2.SBQQ__AssetConversionType__c</members>
+        <members>Product2.SBQQ__BillingFrequency__c</members>
+        <members>Product2.SBQQ__BillingType__c</members>
+        <members>Product2.SBQQ__BlockPricingField__c</members>
+        <members>Product2.SBQQ__BundledPriceCalculation__c</members>
+        <members>Product2.SBQQ__ChargeType__c</members>
+        <members>Product2.SBQQ__ConfigurationEvent__c</members>
+        <members>Product2.SBQQ__ConfiguratorPageName__c</members>
+        <members>Product2.SBQQ__Component__c</members>
+        <members>Product2.SBQQ__DefaultQuantity__c</members>
+        <members>Product2.SBQQ__DescriptionLocked__c</members>
+        <members>Product2.SBQQ__DisableAdHocPricing__c</members>
+        <members>Product2.SBQQ__ExcludeFromMaintenance__c</members>
+        <members>Product2.SBQQ__ExcludeFromOpportunity__c</members>
+        <members>Product2.SBQQ__Feature__c</members>
+        <members>Product2.SBQQ__Hidden__c</members>
+        <members>Product2.SBQQ__IncludeInMaintenance__c</members>
+        <members>Product2.SBQQ__MaxQuantity__c</members>
+        <members>Product2.SBQQ__MinQuantity__c</members>
+        <members>Product2.SBQQ__NewQuoteBehavior__c</members>
+        <members>Product2.SBQQ__NonDiscountable__c</members>
+        <members>Product2.SBQQ__NonPartnerDiscountable__c</members>
+        <members>Product2.SBQQ__Optional__c</members>
+        <members>Product2.SBQQ__PricingMethod__c</members>
+        <members>Product2.SBQQ__PricingGuidance__c</members>
+        <members>Product2.SBQQ__QuantityEditable__c</members>
+        <members>Product2.SBQQ__QuantityScale__c</members>
+        <members>Product2.SBQQ__ReconfigurationDisabled__c</members>
+        <members>Product2.SBQQ__RenewalPricingMethod__c</members>
+        <members>Product2.SBQQ__Standalone__c</members>
+        <members>Product2.SBQQ__SubscriptionBase__c</members>
+        <members>Product2.SBQQ__SubscriptionPricing__c</members>
+        <members>Product2.SBQQ__SubscriptionTerm__c</members>
+        <members>Product2.SBQQ__SubscriptionType__c</members>
+        <members>Product2.SBQQ__TaxCode__c</members>
+        <!-- Contract -->
+        <members>Contract.SBQQ__ActiveEndDate__c</members>
+        <members>Contract.SBQQ__ActiveStartDate__c</members>
+        <members>Contract.SBQQ__AmendmentOpportunityRecordTypeId__c</members>
+        <members>Contract.SBQQ__AmendmentOwner__c</members>
+        <members>Contract.SBQQ__AmendmentPricebook__c</members>
+        <members>Contract.SBQQ__AmendmentStartDate__c</members>
+        <members>Contract.SBQQ__DefaultRenewalContactRoles__c</members>
+        <members>Contract.SBQQ__DefaultRenewalOpportunityRecordTypeId__c</members>
+        <members>Contract.SBQQ__DefaultRenewalOwner__c</members>
+        <members>Contract.SBQQ__DefaultRenewalPartner__c</members>
+        <members>Contract.SBQQ__DisableAmendmentCoTerm__c</members>
+        <members>Contract.SBQQ__Evergreen__c</members>
+        <members>Contract.SBQQ__ExpirationDate__c</members>
+        <members>Contract.SBQQ__MasterContract__c</members>
+        <members>Contract.SBQQ__MDQPrimaryQuoteTerm__c</members>
+        <members>Contract.SBQQ__Opportunity__c</members>
+        <members>Contract.SBQQ__Order__c</members>
+        <members>Contract.SBQQ__PreserveBundleStructureUponRenewals__c</members>
+        <members>Contract.SBQQ__Quote__c</members>
+        <members>Contract.SBQQ__RenewalForecast__c</members>
+        <members>Contract.SBQQ__RenewalOpportunity__c</members>
+        <members>Contract.SBQQ__RenewalOpportunityStage__c</members>
+        <members>Contract.SBQQ__RenewalPricingMethod__c</members>
+        <members>Contract.SBQQ__RenewalQuoted__c</members>
+        <members>Contract.SBQQ__RenewalTerm__c</members>
+        <members>Contract.SBQQ__RenewalUpliftRate__c</members>
+        <!-- Order -->
+        <members>Order.SBQQ__AmendedContract__c</members>
+        <members>Order.SBQQ__Contract__c</members>
+        <members>Order.SBQQ__ContractingMethod__c</members>
+        <members>Order.SBQQ__Contracted__c</members>
+        <members>Order.SBQQ__Invoice__c</members>
+        <members>Order.SBQQ__PaymentTerms__c</members>
+        <members>Order.SBQQ__Quote__c</members>
+        <members>Order.SBQQ__RenewalOpportunity__c</members>
+        <members>Order.SBQQ__RenewalUpliftRate__c</members>
+        <members>Order.SBQQ__Type__c</members>
+        <!-- OrderItem (Order Product) -->
+        <members>OrderItem.SBQQ__BillingFrequency__c</members>
+        <members>OrderItem.SBQQ__BillingType__c</members>
+        <members>OrderItem.SBQQ__BlockPrice__c</members>
+        <members>OrderItem.SBQQ__ChargeType__c</members>
+        <members>OrderItem.SBQQ__Contract__c</members>
+        <members>OrderItem.SBQQ__ContractAction__c</members>
+        <members>OrderItem.SBQQ__ContractedPrice__c</members>
+        <members>OrderItem.SBQQ__DefaultSubscriptionTerm__c</members>
+        <members>OrderItem.SBQQ__Discount__c</members>
+        <members>OrderItem.SBQQ__DiscountSchedule__c</members>
+        <members>OrderItem.SBQQ__Excluded__c</members>
+        <members>OrderItem.SBQQ__ExternalPrice__c</members>
+        <members>OrderItem.SBQQ__ListPrice__c</members>
+        <members>OrderItem.SBQQ__NetPrice__c</members>
+        <members>OrderItem.SBQQ__OptionLevel__c</members>
+        <members>OrderItem.SBQQ__OptionType__c</members>
+        <members>OrderItem.SBQQ__PriceEditable__c</members>
+        <members>OrderItem.SBQQ__PricingMethod__c</members>
+        <members>OrderItem.SBQQ__ProductOption__c</members>
+        <members>OrderItem.SBQQ__QuoteLine__c</members>
+        <members>OrderItem.SBQQ__RequiredBy__c</members>
+        <members>OrderItem.SBQQ__Standalone__c</members>
+        <members>OrderItem.SBQQ__SubscriptionEndDate__c</members>
+        <members>OrderItem.SBQQ__SubscriptionPricing__c</members>
+        <members>OrderItem.SBQQ__SubscriptionStartDate__c</members>
+        <members>OrderItem.SBQQ__SubscriptionTerm__c</members>
+        <members>OrderItem.SBQQ__SubscriptionType__c</members>
+        <members>OrderItem.SBQQ__TaxCode__c</members>
+        <members>OrderItem.SBQQ__UpgradedSubscription__c</members>
+        <name>CustomField</name>
+    </types>
+
+    <!-- CPQ – Apex Classes -->
+    <types>
+        <members>SBQQ__*</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- CPQ – Apex Triggers -->
+    <types>
+        <members>SBQQ__*</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <!-- CPQ – Visualforce Pages -->
+    <types>
+        <members>SBQQ__*</members>
+        <name>ApexPage</name>
+    </types>
+
+    <!-- CPQ – Visualforce Components -->
+    <types>
+        <members>SBQQ__*</members>
+        <name>ApexComponent</name>
+    </types>
+
+    <!-- CPQ – Layouts -->
+    <types>
+        <members>SBQQ__Quote__c-SBQQ Quote Layout</members>
+        <members>SBQQ__QuoteLine__c-SBQQ Quote Line Layout</members>
+        <members>SBQQ__QuoteLineGroup__c-SBQQ Quote Line Group Layout</members>
+        <members>SBQQ__QuoteDocument__c-SBQQ Quote Document Layout</members>
+        <members>SBQQ__QuoteTemplate__c-SBQQ Quote Template Layout</members>
+        <members>SBQQ__TemplateSection__c-SBQQ Template Section Layout</members>
+        <members>SBQQ__TemplateContent__c-SBQQ Template Content Layout</members>
+        <members>SBQQ__Subscription__c-SBQQ Subscription Layout</members>
+        <members>SBQQ__ProductOption__c-SBQQ Product Option Layout</members>
+        <members>SBQQ__ProductRule__c-SBQQ Product Rule Layout</members>
+        <members>SBQQ__PriceRule__c-SBQQ Price Rule Layout</members>
+        <members>SBQQ__PriceAction__c-SBQQ Price Action Layout</members>
+        <members>SBQQ__DiscountSchedule__c-SBQQ Discount Schedule Layout</members>
+        <members>SBQQ__DiscountTier__c-SBQQ Discount Tier Layout</members>
+        <members>SBQQ__ContractedPrice__c-SBQQ Contracted Price Layout</members>
+        <members>SBQQ__Cost__c-SBQQ Cost Layout</members>
+        <name>Layout</name>
+    </types>
+
+    <!-- CPQ – Tabs -->
+    <types>
+        <members>SBQQ__Quote__c</members>
+        <members>SBQQ__QuoteTemplate__c</members>
+        <members>SBQQ__ProductRule__c</members>
+        <members>SBQQ__PriceRule__c</members>
+        <members>SBQQ__DiscountSchedule__c</members>
+        <name>CustomTab</name>
+    </types>
+
+    <!-- CPQ – Custom Settings -->
+    <types>
+        <members>SBQQ__QuoteCalculatorPlugin__c</members>
+        <members>SBQQ__ProductSearchPlugin__c</members>
+        <members>SBQQ__CustomActionPlugin__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- CPQ – Static Resources -->
+    <types>
+        <members>SBQQ__*</members>
+        <name>StaticResource</name>
+    </types>
+
+    <!-- ═══════════════════════════════════════════════════
+         SALESFORCE BILLING (namespace: blng)
+         Custom Objects
+    ═══════════════════════════════════════════════════ -->
+    <types>
+        <!-- Core Billing -->
+        <members>blng__Invoice__c</members>
+        <members>blng__InvoiceLine__c</members>
+        <members>blng__InvoiceScheduler__c</members>
+        <members>blng__BillingSchedule__c</members>
+        <members>blng__BillingRule__c</members>
+        <!-- Payments -->
+        <members>blng__Payment__c</members>
+        <members>blng__PaymentAllocation__c</members>
+        <members>blng__PaymentMethod__c</members>
+        <members>blng__PaymentGateway__c</members>
+        <members>blng__PaymentGatewayLog__c</members>
+        <members>blng__PaymentSchedule__c</members>
+        <!-- Credit Notes -->
+        <members>blng__CreditNote__c</members>
+        <members>blng__CreditNoteLine__c</members>
+        <members>blng__CreditNoteAllocation__c</members>
+        <!-- Revenue Recognition -->
+        <members>blng__RevenueDistributionMethod__c</members>
+        <members>blng__RevenueRecognitionRule__c</members>
+        <members>blng__RevenueSchedule__c</members>
+        <members>blng__RevenueScheduleLine__c</members>
+        <members>blng__RevenueTransaction__c</members>
+        <members>blng__FinanceBook__c</members>
+        <members>blng__FinanceTransaction__c</members>
+        <members>blng__FinancePeriod__c</members>
+        <!-- Tax -->
+        <members>blng__TaxEngine__c</members>
+        <members>blng__TaxIntegration__c</members>
+        <members>blng__TaxRate__c</members>
+        <members>blng__TaxRule__c</members>
+        <members>blng__TaxTreatment__c</members>
+        <!-- Usage -->
+        <members>blng__UsageSummary__c</members>
+        <members>blng__UsageConsumptionSchedule__c</members>
+        <members>blng__UsageConsumptionRate__c</members>
+        <!-- Legal Entity / AR -->
+        <members>blng__LegalEntity__c</members>
+        <members>blng__GlAccount__c</members>
+        <members>blng__GlRule__c</members>
+        <members>blng__GlTreatment__c</members>
+        <members>blng__GlTransaction__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Billing – Custom Fields on Standard Objects -->
+    <types>
+        <!-- Order -->
+        <members>Order.blng__BillingDayOfMonth__c</members>
+        <members>Order.blng__InvoiceDeliveryMethod__c</members>
+        <members>Order.blng__InvoiceRunStartDate__c</members>
+        <members>Order.blng__PaymentTerm__c</members>
+        <members>Order.blng__PurchaseOrderNumber__c</members>
+        <!-- OrderItem -->
+        <members>OrderItem.blng__BillingRule__c</members>
+        <members>OrderItem.blng__RevenueRecognitionRule__c</members>
+        <members>OrderItem.blng__TaxRule__c</members>
+        <!-- Account -->
+        <members>Account.blng__BillToContact__c</members>
+        <members>Account.blng__DefaultPaymentMethod__c</members>
+        <members>Account.blng__InvoiceDeliveryMethod__c</members>
+        <members>Account.blng__NetTerms__c</members>
+        <members>Account.blng__PaymentTerm__c</members>
+        <members>Account.blng__TaxExempt__c</members>
+        <members>Account.blng__TaxExemptionNumber__c</members>
+        <!-- Contact -->
+        <members>Contact.blng__DefaultPaymentMethod__c</members>
+        <name>CustomField</name>
+    </types>
+
+    <!-- Billing – Apex Classes -->
+    <types>
+        <members>blng__*</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Billing – Apex Triggers -->
+    <types>
+        <members>blng__*</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <!-- Billing – Visualforce Pages -->
+    <types>
+        <members>blng__*</members>
+        <name>ApexPage</name>
+    </types>
+
+    <!-- Billing – Visualforce Components -->
+    <types>
+        <members>blng__*</members>
+        <name>ApexComponent</name>
+    </types>
+
+    <!-- Billing – Layouts -->
+    <types>
+        <members>blng__Invoice__c-blng Invoice Layout</members>
+        <members>blng__InvoiceLine__c-blng Invoice Line Layout</members>
+        <members>blng__Payment__c-blng Payment Layout</members>
+        <members>blng__PaymentAllocation__c-blng Payment Allocation Layout</members>
+        <members>blng__PaymentMethod__c-blng Payment Method Layout</members>
+        <members>blng__CreditNote__c-blng Credit Note Layout</members>
+        <members>blng__CreditNoteLine__c-blng Credit Note Line Layout</members>
+        <members>blng__RevenueSchedule__c-blng Revenue Schedule Layout</members>
+        <members>blng__FinanceBook__c-blng Finance Book Layout</members>
+        <members>blng__TaxRule__c-blng Tax Rule Layout</members>
+        <members>blng__TaxTreatment__c-blng Tax Treatment Layout</members>
+        <members>blng__UsageSummary__c-blng Usage Summary Layout</members>
+        <name>Layout</name>
+    </types>
+
+    <!-- Billing – Tabs -->
+    <types>
+        <members>blng__Invoice__c</members>
+        <members>blng__Payment__c</members>
+        <members>blng__CreditNote__c</members>
+        <members>blng__RevenueSchedule__c</members>
+        <members>blng__FinanceBook__c</members>
+        <members>blng__UsageSummary__c</members>
+        <name>CustomTab</name>
+    </types>
+
+    <!-- Billing – Static Resources -->
+    <types>
+        <members>blng__*</members>
+        <name>StaticResource</name>
+    </types>
+
+    <!-- ═══════════════════════════════════════════════════
+         SHARED CPQ + BILLING
+    ═══════════════════════════════════════════════════ -->
+
+    <!-- Permission Sets -->
+    <types>
+        <members>SBQQ__*</members>
+        <members>blng__*</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- Custom Labels -->
+    <types>
+        <members>SBQQ__*</members>
+        <members>blng__*</members>
+        <name>CustomLabel</name>
+    </types>
+
+    <!-- Flows -->
+    <types>
+        <members>SBQQ__*</members>
+        <members>blng__*</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Named Credentials (for external integrations) -->
+    <types>
+        <members>SBQQ__*</members>
+        <members>blng__*</members>
+        <name>NamedCredential</name>
+    </types>
+
+    <!-- Custom Metadata Types -->
+    <types>
+        <members>SBQQ__*</members>
+        <members>blng__*</members>
+        <name>CustomMetadata</name>
+    </types>
+
+    <!-- Validation Rules on CPQ objects -->
+    <types>
+        <members>SBQQ__Quote__c.SBQQ__*</members>
+        <members>SBQQ__QuoteLine__c.SBQQ__*</members>
+        <members>SBQQ__Subscription__c.SBQQ__*</members>
+        <members>blng__Invoice__c.blng__*</members>
+        <members>blng__Payment__c.blng__*</members>
+        <name>ValidationRule</name>
+    </types>
+
+    <version>58.0</version>
+</Package>
